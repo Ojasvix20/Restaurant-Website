@@ -1,0 +1,278 @@
+* {
+    margin: 0px 0px;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation bar */
+#navbar {
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo {
+    margin: 10px 10px;
+}
+
+#logo img {
+    /* height: 20px; */
+    width: 50px;
+    margin: 0px 3px;
+}
+
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+
+
+#navbar ul li {
+    margin: 0 0px;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 0 9px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    display: block;
+    border-radius: 8px;
+}
+
+/* HOME SECTION */
+#home {
+    height: 200px;
+    /* width: 100%; */
+    font-family: "EB Garamond", serif;
+    display: flex;
+    margin: 10px 0px;
+    flex-direction: column;
+    padding: 12px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(home-bg.jpg) no-repeat center;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
+}
+
+#home h1 {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+#home p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+/* SERVICES SECTION */
+
+#services {
+    margin: auto;
+    font-family: "EB Garamond", serif;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+
+#services .box {
+    /* display: flex; */
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: 5px 20px;
+    border: 2px solid brown;
+    border-radius: 20px;
+    color: white;
+    width: 30%;
+}
+
+#services .box img {
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    height: 250px;
+}
+
+/* CLIENTS SECTION */
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section::before {
+    margin-top: 8px;
+    content: "";
+    position: absolute;
+    background: url(clients/bg.jpg);
+    width: 100%;
+    height: 170px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#client-section h2 {
+    padding: 0px 0px;
+    margin: 10px;
+}
+
+.client-item img {
+    padding: 0px 20px;
+    height: 100px;
+    /* width: 120px; */
+}
+
+/* CONTACT SECTION */
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url(clients/contact-bg.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    margin-top: 20px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 2px 7px;
+    border-radius: 15px;
+}
+
+#contact h2 {
+    margin: 5px;
+}
+
+#contact-box form {
+    width: 20%;
+}
+
+#contact label {
+    font-family: "EB Garamond", serif;
+    font-size: 17px;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 0px 10px;
+}
+
+#contact-box button {
+
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* UTILITY CLASSES */
+.h-primary {
+    padding: 30px 10px;
+    font-size: 70px;
+    font-weight: 1000;
+    font-style: normal;
+
+}
+
+h2.h-primary {
+
+    color: white;
+    margin-top: 70px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+h2.h-secondary {
+    font-size: 40px;
+    color: white;
+
+}
+
+.btn {
+    padding: 5px 15px;
+    border: 2px solid black;
+    background-color: brown;
+    color: white;
+    margin: 15px auto;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: rgb(124, 32, 32);
+
+}
+
+.center {
+    text-align: center;
+}
